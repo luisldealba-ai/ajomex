@@ -1,0 +1,17 @@
+# Lista de Verificación: Preparación para Corte Láser (MDF 3mm)
+
+Antes de exportar el diseño para manufactura, es esencial seguir este protocolo para evitar errores de escala o daños en el material.
+
+## 1. Verificación de Geometría y Escala
+- [ ] **Escala Global:** Seleccionar el objeto y presionar `Ctrl + A` > `Escala`. (La escala en el panel `N` debe marcar 1.000 en todos los ejes).
+- [ ] **Grosor Z:** Confirmar que la dimensión en Z sea exactamente `0.3 cm` o `3 mm`.
+- [ ] **Unidades:** Verificar que las unidades de la escena estén en `Métrico` y la longitud en `Centímetros` o `Milímetros`.
+
+## 2. Limpieza de Malla (Vectores)
+- [ ] **Eliminar Duplicados:** En Modo Edición, seleccionar todo (`A`) y presionar `M` > `Merge by Distance`. (Esto evita que el láser pase dos veces por la misma línea).
+- [ ] **Malla Plana:** Asegurarse de que el objeto exportado sea una cara 2D (sin volumen) para que el software de corte láser no interprete doble línea.
+
+## 3. Configuración de Exportación (DXF)
+- [ ] **Formato:** AutoCAD DXF (.dxf).
+- [ ] **Proyección:** Seleccionar "Top View" (Vista Superior) en los ajustes de exportación.
+- [ ] **Modificadores:** Asegurarse de que la casilla "Apply Modifiers" esté marcada para incluir los biseles y agujeros booleanos.
